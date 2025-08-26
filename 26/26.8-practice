@@ -1,0 +1,98 @@
+class leapyear{
+    public static void main(String args[])
+    {
+        int a = 2000;
+        if(a%4==0)
+        {
+           System.out.println("Leap Year");
+           if(a%400==0)
+           {
+               System.out.print("It is century");
+           }
+           else{
+                 System.out.print("It is Non-century");
+           }
+        }
+        else
+        {
+           System.out.println("Non-Leap Year"); 
+           if(a%400==0)
+           {
+               System.out.print("It is century");
+           }
+           else{
+                 System.out.print("It is Non-century");
+           }
+        }
+    }
+}
+
+class div{
+    public static void main(String args[])
+    {
+        for(int i=1;i<=100;i++)
+         {
+        if(i%3==0 && i%5==0)
+        {
+            System.out.println(i);
+        }
+        
+        }
+        
+    }
+}
+
+import java.util.Scanner;
+class evenforif{
+    public static void main(String args[])
+    {
+        Scanner sk = new Scanner(System.in);
+        int a = sk.nextInt();
+
+        int evencount=0;
+        int oddcount=0;
+        for(int i=a;i<=10;i++)
+        {
+            if(i%2==0)
+            {
+                System.out.println("Even Number :"+i);
+                evencount++;
+            }
+            else
+            {
+                System.out.println("Odd Number :"+i);
+                oddcount++;
+            }
+        }
+        System.out.println("The Count of Even no is :"+evencount);
+        System.out.println("The Count of Odd no is :"+oddcount);
+       
+    }
+}
+
+import java.util.Scanner;
+class exfor{
+    public static void main(String args[])
+    {
+        Scanner sk = new Scanner(System.in);
+        int n = sk.nextInt();
+        for(int i=n;i<=10;i++)
+        System.out.println(i);
+    }
+}
+
+import java.util.Scanner;
+class For{
+    public static void main(String args[])
+    {
+        Scanner sk = new Scanner(System.in);
+        int a = sk.nextInt();
+        for(int i=1;i<=a;i++){
+            for(int j=i;j>0;j--){
+            System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}        
+        
